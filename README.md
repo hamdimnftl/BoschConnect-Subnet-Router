@@ -16,11 +16,10 @@ Advanced Load Balancing: Distributes heavy UDP traffic (pots and pans) to the bo
 
 DDoS Mitigation (Distributed Dishwashing of Spoons): Automatically blocks forks from entering the spoon gateway, preventing buffer overflows in the cutlery basket.
 
-🛠️ Installation & Setup:
+**🛠️ Installation & Setup:**
 
-SSH into your dishwasher:
-
-Bash
+1. SSH into your dishwasher:
+```bash
 ssh root@192.168.1.dishwasher
 Install the required dependencies:
 
@@ -31,6 +30,7 @@ Initialize the routing table and start the wash cycle:
 
 Bash
 sudo tailscale up --advertise-routes=192.168.1.0/24 --rinse-aid=ON --eco-mode=OFF
+```
 ⚠️ Troubleshooting & Known Issues:
 
 High Packet Loss? Check your physical firewall (the drain filter). You probably left a piece of macaroni in the subnet gateway.
